@@ -1,3 +1,4 @@
+//JS to control the trivia game
 $(document).ready(function() {
     var welcome = $("#welcome-screen")
     var gameOver = $("#result-screen")
@@ -44,14 +45,14 @@ $(document).ready(function() {
                 $("#countdown").text(playerInteract.seconds);
             }
         },
-
+        //Correct and Incorrect answer selection scoring
         answerCheck: function() {
             if ($("#correct1").is(':checked')) {
                 ++playerInteract.correctAnswers;
                 --playerInteract.unanswered;
                 playerInteract.scoreCount;
             }
-            else if ($("#wrongA").is(':checked') || $("#wrongB").is(':checked') || $("#wrongC").is(':checked')) {
+            else if ($("#wrongA").is(':checked') || $("#wrongB").is(':checked') || $("#wrongD").is(':checked')) {
                 ++playerInteract.incorrectAnswers;
                 --playerInteract.unanswered;
             };
@@ -67,7 +68,7 @@ $(document).ready(function() {
 				++playerInteract.correctAnswers;
 				--playerInteract.unanswered;
 			} 
-			else if ($("#wrongG").is(':checked')) {
+			else if ($("#wrongG").is(':checked') || $("#wrongH").is(':checked')  || $("#wrongI").is(':checked')) {
 				++playerInteract.incorrectAnswers;
 				--playerInteract.unanswered;
 			};
@@ -75,7 +76,7 @@ $(document).ready(function() {
 				++playerInteract.correctAnswers;
 				--playerInteract.unanswered;
 			} 
-			else if ($("#wrongH").is(':checked') || $("#wrongI").is(':checked')  || $("#wrongJ").is(':checked')) {
+			else if ($("#wrongJ").is(':checked') || $("#wrongK").is(':checked')  || $("#wrongL").is(':checked')) {
 				++playerInteract.incorrectAnswers;
 				--playerInteract.unanswered;
 			};
@@ -83,7 +84,7 @@ $(document).ready(function() {
 				++playerInteract.correctAnswers;
 				--playerInteract.unanswered;
 			} 
-			else if ($("#wrongK").is(':checked')) {
+			else if ($("#wrongM").is(':checked')) {
 				++playerInteract.incorrectAnswers;
 				--playerInteract.unanswered;
 			};
@@ -91,7 +92,7 @@ $(document).ready(function() {
 				++playerInteract.correctAnswers;
 				--playerInteract.unanswered;
 			} 
-			else if ($("#wrongL").is(':checked') || $("#wrongM").is(':checked')  || $("#wrongN").is(':checked')) {
+			else if ($("#wrongN").is(':checked') || $("#wrongO").is(':checked')  || $("#wrongP").is(':checked')) {
 				++playerInteract.incorrectAnswers;
 				--playerInteract.unanswered;
 			};
@@ -99,7 +100,7 @@ $(document).ready(function() {
 				++playerInteract.correctAnswers;
 				--playerInteract.unanswered;
 			} 
-			else if ($("#wrongO").is(':checked') || $("#wrongP").is(':checked')  || $("#wrongQ").is(':checked')) {
+			else if ($("#wrongP").is(':checked')) {
 				++playerInteract.incorrectAnswers;
 				--playerInteract.unanswered;
 			};
@@ -107,7 +108,7 @@ $(document).ready(function() {
 				++playerInteract.correctAnswers;
 				--playerInteract.unanswered;
 			} 
-			else if ($("#wrongR").is(':checked')) {
+			else if ($("#wrongQ").is(':checked') || $("#wrongR").is(':checked')  || $("#wrongS").is(':checked')) {
 				++playerInteract.incorrectAnswers;
 				--playerInteract.unanswered;
 			};
@@ -122,12 +123,12 @@ $(document).ready(function() {
     };
 
      window.onload = playerInteract.welcome;
-
-    $("#startButton").on("click", function(event) {
+    //on-click function to start game and timer
+    $("#start-button").on("click", function(event) {
         playerInteract.initiate()
     });
 
-    $("#resetButton").on("click", function(event) {
+    $("#reset-button").on("click", function(event) {
         window.location.reload();
     });
 
