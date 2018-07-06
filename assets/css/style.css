@@ -7,13 +7,17 @@ html {
 }
 
 body {
-    background-color: rgb(255, 115, 0);
+    background-image: url(../images/splat_background.png);
     background-size: 100%;
+    background-color: limegreen;
     min-height: 100%;
     width: 100%;
     position: absolute;
     height: auto;
     color: white;
+    font-size: 22px;
+    text-shadow: 2px 2px 4px black;
+    letter-spacing: 2px;
 }
 
 /* Typography */
@@ -52,7 +56,7 @@ h3 {
 
 h4 {
     color: white;
-    font: 700 20px/22px 'Architects Daughter', cursive;
+    font: 700 24px/26px 'Architects Daughter', cursive;
     text-align: center;
     padding: 10px;
 }
@@ -73,71 +77,75 @@ em {
 #header {
     display: block;
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
 }
 
 #angry_beavers {
     display: inline-block;
-    width: 15%;
-    height: auto;
+    width: 150px;
+    height: 150px;
     z-index: 1;
-    position: absolute;
+    position: relative;
+    margin-left: 700px;
 }
 
 #arnold {
     display: inline-block;
-    width: 15%;
-    height: auto;
+    width: 150px;
+    height: 150px;
     z-index: 1;
-    position: absolute;
+    position: relative;
 }
 
 #catdog {
     display: inline-block;
-    width: 15%;
-    height: auto;
+    width: 150px;
+    height: 150px;
     z-index: 1;
-    position: absolute;
+    position: relative;
 }
 
 #chuckie {
     display: inline-block;
-    width: 15%;
-    height: auto;
+    width: 150px;
+    height: 150px;
     z-index: 1;
-    position: absolute;
+    position: relative;
 }
 
 #doug {
     display: inline-block;
-    width: 15%;
-    height: auto;
+    width: 150px;
+    height: 150px;
     z-index: 1;
-    position: absolute;
+    position: relative;
+    margin-left: 700px;
 }
 
 #kablam {
     display: inline-block;
-    width: 15%;
-    height: auto;
+    width: 150px;
+    height: 150px;
     z-index: 1;
-    position: absolute;
+    position: relative;
+    margin-left: 700px;
 }
 
 #rocket_power {
     display: inline-block;
-    width: 15%;
-    height: auto;
+    width: 150px;
+    height: 150px;
     z-index: 1;
-    position: absolute;
+    position: relative;
+    margin-left: 700px;
 }
 
 #rocko {
     display: inline-block;
-    width: 15%;
-    height: auto;
+    width: 150px;
+    height: 150px;
     z-index: 1;
-    position: absolute;
+    position: relative;
 }
 
 .startButton {
@@ -174,3 +182,30 @@ em {
     border: 5px double white;
 }
 
+.container {
+    display: block;
+    /*background-color: rgb(255, 115, 0);*/
+    width: 75%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    top: 50px;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.answer-choices {
+    position: relative;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    padding: 10px;
+    z-index: 2;
+}
+
+#correct-answers,
+#incorrect-answers,
+#unanswered {
+    display: inline-block;
+}
