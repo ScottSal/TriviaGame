@@ -31,11 +31,9 @@
             <div class="answer-choices">
                 <input type="radio" name="q1" class="radio-button" id="wrongA"> Johnson
                 <input type="radio" name="q1" class="radio-button" id="wrongB"> Burger
-                <input type="radio" name="q1" class="radio-button" id="correctC"> Pickles
+                <input type="radio" name="q1" class="radio-button" id="correct1"> Pickles
                 <input type="radio" name="q1" class="radio-button" id="wrongD"> Williams
-            </div>
-
-        <img id="rocko" src="assets/images/rocko.png" alt="Rocko">
+            </div>    
 
         <h4>What kind of house do CatDog live in?</h4>
             
@@ -43,7 +41,7 @@
                 <input type="radio" name="q2" class="radio-button" id="wrongA"> A bone and ball of yarn
                 <input type="radio" name="q2" class="radio-button" id="wrongB"> A fire hydrant
                 <input type="radio" name="q2" class="radio-button" id="wrongC"> A scratching post
-                <input type="radio" name="q2" class="radio-button" id="correctD"> A fish and a bone
+                <input type="radio" name="q2" class="radio-button" id="correct2"> A fish and a bone
             </div>
 
         <img id="cat_dog" src="assets/images/cat_dog.png" alt="CatDog">
@@ -53,27 +51,73 @@
         <h4>What is the name of Doug Funnie's dog?</h4>
 
             <div class="answer-choices">
-                <input type="radio" name="q3" class="radio-button" id="wrongA"> Stinky
-                <input type="radio" name="q3" class="radio-button" id="correctB"> Porkchop
-                <input type="radio" name="q3" class="radio-button" id="wrongC"> Skeeter
-                <input type="radio" name="q3" class="radio-button" id="wrongD"> Ralph
+                <input type="radio" name="q3" class="radio-button" id="wrongD"> Stinky
+                <input type="radio" name="q3" class="radio-button" id="correct3"> Porkchop
+                <input type="radio" name="q3" class="radio-button" id="wrongE"> Skeeter
+                <input type="radio" name="q3" class="radio-button" id="wrongF"> Ralph
             </div>
 
-        <img id="angry_beavers" src="assets/images/angry_beavers.png" alt="Angry Beavers">
-        
         <h4>Who is Arnold's best friend?</h4>
 
-            <div class="answer-choices">
-                <input type="radio" name="q4" class="radio-button" id="wrongA"> Sid
-                <input type="radio" name="q4" class="radio-button" id="correctB"> Jerrold
-                <input type="radio" name="q4" class="radio-button" id="wrongC"> Harold
-                <input type="radio" name="q4" class="radio-button" id="wrongD"> Helga
+        <div class="answer-choices">
+            <input type="radio" name="q4" class="radio-button" id="wrongG"> Sid
+            <input type="radio" name="q4" class="radio-button" id="correct4"> Jerrold
+            <input type="radio" name="q4" class="radio-button" id="wrongH"> Harold
+            <input type="radio" name="q4" class="radio-button" id="wrongI"> Helga
             </div>
+        <img id="rocko" src="assets/images/rocko.png" alt="Rocko">    
+        
+        <img id="angry_beavers" src="assets/images/angry_beavers.png" alt="Angry Beavers">
+
         <h4>Rocko's angry neighbor is named Mr. Fathead.</h4>
 
-    
+            <div class="answer-choices">
+                <input type="radio" name="q5" class="radio-button" id="correct5"> True
+                <input type="radio" name="q5" class="radio-button" id="wrongJ"> False
+            </div>
+
+        <h4>What is Squid's real name?</h4>
+        
+        <div class="answer-choices">
+
+            <input type="radio" name="q6" class="radio-button" id="wrongK"> Otto
+            <input type="radio" name="q6" class="radio-button" id="wrongL"> Reggie
+            <input type="radio" name="q6" class="radio-button" id="wrongM"> Twister
+            <input type="radio" name="q6" class="radio-button" id="correct6"> Sam
+            </div>
+
         <img id="arnold" src="assets/images/arnold.png" alt="Arnold">
 
+        <img id="rocket_power" src="assets/images/rocket_power.png" alt="Rocket Power">
+
+        <h4>Henry and May are the co-hosts of show, <em>KaBlam!</em>.</h4>
+
+            <div class="answer-choices">
+                <input type="radio" name="q7" class="radio-button" id="wrongN"> True
+                <input type="radio" name="q7" class="radio-button" id="correct7"> False
+            </div>
+        <h4>What is the Beavers' favorite thing to watch on TV?</h4>
+
+        <div class="answer-choices">
+            
+            <input type="radio" name="q8" class="radio-button" id="wrongO"> Westerns
+            <input type="radio" name="q8" class="radio-button" id="wrongP"> Comedies
+            <input type="radio" name="q8" class="radio-button" id="correct8"> Cheesy Horror Movies
+            <input type="radio" name="q8" class="radio-button" id="wrongQ"> Game Shows
+            </div>
+        <img id="kablam" src="assets/images/kablam.png" alt="KaBlam!"> 
     </div>
+
+    <div id="result-screen" class="container">
+
+        <img id="header" src="assets/images/header_image.png" alt="90's Nickelodeon Cartoon Trivia">
+
+        <h1>Commercial Break!</h1>
+        <h4>Correct Answers: <div id="correct-answers"></div></h4>
+        <h4>Incorrect Answers: <div id="incorrect-answers"></div></h4>
+        <h4>Unanswered: <div id="unanswered"></div></h4>
+        <button id="reset-button"><h2>Watch Reruns?</h2></button>
+    </div>
+    
 </body>
 </html>
